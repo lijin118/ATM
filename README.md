@@ -5,7 +5,7 @@ Authors: Jingjing Li, Erpeng Chen, Zhengming Ding, Lei Zhu, Ke Lu and Heng Tao S
 
 
 
-# ATM implemneted in PyTorch
+# ATM implemented in PyTorch
 
 ## Prerequisites
 - PyTorch >= 1.0.0 (with suitable CUDA and CuDNN version)
