@@ -1,7 +1,7 @@
 # ATM (Adversarial Tight Match)
 Maximum Density Divergence for Domain Adaptation published on IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
 
-
+Authors: Jingjing Li, Erpeng Chen, Zhengming Ding, Lei Zhu, Ke Lu and Heng Tao Shen
 
 
 
