@@ -32,18 +32,18 @@ python train_uspsmnist.py --mdd_weight 0.01 --epochs 50 --task MNIST2USPS
 ```
 Office-31
 
-pythonn train_image.py  --net ResNet50 --dset office --test_interval 500 --s_dset_path ../data/office/amazon_list.txt --t_dset_path ../data/office/webcam_list.txt
+python train_image.py  --net ResNet50 --dset office --test_interval 500 --s_dset_path ../data/office/amazon_list.txt --t_dset_path ../data/office/webcam_list.txt
 ```
 ```
 Office-Home
 
-pythonn train_image.py  --net ResNet50 --dset office-home --test_interval 2000 --s_dset_path ../data/office-home/Art.txt --t_dset_path ../data/office-home/Clipart.txt
+python train_image.py  --net ResNet50 --dset office-home --test_interval 2000 --s_dset_path ../data/office-home/Art.txt --t_dset_path ../data/office-home/Clipart.txt
 ```
 
 ```
 Image-clef
 
-pythonn train_image.py  --net ResNet50 --dset image-clef --test_interval 500 --s_dset_path ../data/image-clef/b_list.txt --t_dset_path ../data/image-clef/i_list.txt
+python train_image.py  --net ResNet50 --dset image-clef --test_interval 500 --s_dset_path ../data/image-clef/b_list.txt --t_dset_path ../data/image-clef/i_list.txt
 ```
 
 The adversarial learning part is inspired by CDAN.
