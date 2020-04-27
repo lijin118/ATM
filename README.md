@@ -1,9 +1,49 @@
-# ATM
-The pre-trained model of ATM
+# ATM (Adversarial Tight Match)
+Maximum Density Divergence for Domain Adaptation published on IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
 
 
-This project currently shows how to run the pre-trained ATM model and get the results reported in the paper. The source code will be released on publication
 
-For the digits recognition, please directly run the validate_s2m.py
 
-For the object recognition, limited by space, please download the model first at https://drive.google.com/open?id=1xQWN_0lcyJktbJgkRdDOcR-g5a7oTmdS, and then run the validate_d2a.py
+
+# ATM implemneted in PyTorch
+
+## Prerequisites
+- PyTorch >= 1.0.0 (with suitable CUDA and CuDNN version)
+- torchvision >= 0.2.2
+- Python3
+- Numpy
+- argparse
+- PIL
+
+## Training
+Please use the following commands for different tasks. 
+
+You can find more detailed commands samples in the *train.sh* file
+```
+SVHN->MNIST
+python train_svhnmnist.py --mdd_weight 0.01 --epochs 50
+
+USPS->MNIST
+python train_uspsmnist.py --mdd_weight 0.01 --epochs 50 --task USPS2MNIST
+
+MNIST->USPS
+python train_uspsmnist.py --mdd_weight 0.01 --epochs 50 --task MNIST2USPS
+```
+```
+Office-31
+
+pythonn train_image.py  --net ResNet50 --dset office --test_interval 500 --s_dset_path ../data/office/amazon_list.txt --t_dset_path ../data/office/webcam_list.txt
+```
+```
+Office-Home
+
+pythonn train_image.py  --net ResNet50 --dset office-home --test_interval 2000 --s_dset_path ../data/office-home/Art.txt --t_dset_path ../data/office-home/Clipart.txt
+```
+
+```
+Image-clef
+
+pythonn train_image.py  --net ResNet50 --dset image-clef --test_interval 500 --s_dset_path ../data/image-clef/b_list.txt --t_dset_path ../data/image-clef/i_list.txt
+```
+
+The adversarial learning part is inspired by CDAN.
