@@ -3,6 +3,8 @@ Maximum Density Divergence for Domain Adaptation published on IEEE Transactions 
 
 Authors: Jingjing Li, Erpeng Chen, Zhengming Ding, Lei Zhu, Ke Lu and Heng Tao Shen
 
+Pdf on Arxiv: https://arxiv.org/abs/2004.12615
+
 
 
 # ATM implemented in PyTorch
